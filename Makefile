@@ -1,11 +1,14 @@
 setup:
-	echo setup
+	pipenv install
+	pipenv install -d
 install:
 	pip install git+https://github.com/moaible/python-pip-library-boilerplate
 uninstall:
 	pip uninstall library-boilerplate -y
 reinstall: uninstall install
 lint:
-	mypy boilerplate
+	pipenv run vet
 autocorrect:
-	echo test
+	pipenv run fmt
+test:
+	pipenv run test
