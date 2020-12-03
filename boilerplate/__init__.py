@@ -1,1 +1,1 @@
-from .boilerplate import boilerplate
+from .boilerplate import call
