@@ -2,8 +2,9 @@ from abc import ABCMeta
 from abc import abstractmethod
 from typing import TypeVar, Generic
 
-I = TypeVar("I")
-O = TypeVar("O")
+I = TypeVar('I')
+O = TypeVar('O')
+
 
 class Generator(Generic[I, O], metaclass=ABCMeta):
 
