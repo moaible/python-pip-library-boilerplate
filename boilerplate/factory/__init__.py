@@ -1,4 +1,7 @@
-from boilerplate.generator import Generator
+#!usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from ..generator import Generator
 from typing import TypeVar, Generic, Callable, List
 
 I = TypeVar('I')

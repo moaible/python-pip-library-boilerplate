@@ -1,3 +1,6 @@
+#!usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import pytest
 import boilerplate
 
@@ -11,5 +14,5 @@ number_sets = [
 
 @pytest.mark.parametrize('number, expect', number_sets)
 def test_boilerplate_call(number, expect):
-    ret = boilerplate.call(number)
+    ret = boilerplate.execute(number)
     assert ret == expect

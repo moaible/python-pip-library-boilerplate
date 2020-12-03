@@ -1,12 +1,12 @@
 #!usr/bin/env python
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(name='library-boilerplate',
       version='0.1',
       description='Test for pip install git+',
       url='https://github.com/moaible/python-pip-library-boilerplate',
-      packages=['boilerplate'],
+      packages=find_packages(),
       package_dir={'boilerplate': 'boilerplate'},
       py_modules=['boilerplate'],
       )

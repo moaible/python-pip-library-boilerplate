@@ -1,10 +1,13 @@
-from boilerplate.factory import Factory
-from boilerplate.fizz import FizzGenerator
-from boilerplate.buzz import BuzzGenerator
-from boilerplate.just import JustGenerator
+#!usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from .factory import Factory
+from .fizz import FizzGenerator
+from .buzz import BuzzGenerator
+from .just import JustGenerator
 
 
-def call(num: int) -> str:
+def execute(num: int) -> str:
     factory: Factory[int, str] = Factory(
         generators=[FizzGenerator(), BuzzGenerator()],
         fallback=JustGenerator(),

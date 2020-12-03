@@ -1,4 +1,7 @@
-from boilerplate.generator import Generator
+#!usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from .generator import Generator
 
 
 class FizzGenerator(Generator[int, str]):
@@ -6,7 +9,7 @@ class FizzGenerator(Generator[int, str]):
     def name(self) -> str:
         return 'FizzGenerator'
 
-    def enabled(self, input):
+    def enabled(self, input) -> bool:
         return input % 3 == 0
 
     def generate(self, input: int) -> str:
