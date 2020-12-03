@@ -5,7 +5,7 @@ from typing import TypeVar, Generic
 I = TypeVar("I")
 O = TypeVar("O")
 
-class Generator(ABCMeta, Generic[I, O]):
+class Generator(Generic[I, O], metaclass=ABCMeta):
 
     def __init__(self):
         pass

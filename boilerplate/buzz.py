@@ -2,9 +2,6 @@ from .generator import Generator
 
 class BuzzGenerator(Generator[int, str]):
 
-    def __init__(self):
-        pass
-
     def name(self) -> str:
         return "BuzzGenerator"
 

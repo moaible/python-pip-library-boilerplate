@@ -1,13 +1,13 @@
 from ..generator import Generator
-from typing import TypeVar, Generic, Sequence, Callable, List
+from typing import TypeVar, Generic, Callable, List
 
 I = TypeVar("I")
 O = TypeVar("O")
 
-class Factory(object, Generic[I, O]):
+class Factory(Generic[I, O]):
 
     def __init__(self, 
-        generators: Sequence[Generator[I, O]], 
+        generators: List[Generator[I, O]], 
         fallback: Generator[I, O],
         reducer: Callable[[List[O]], O]):
             self.generators = generators
