@@ -1,1 +1,1 @@
-from . import boilerplate
+from .boilerplate import boilerplate
