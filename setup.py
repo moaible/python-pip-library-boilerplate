@@ -7,5 +7,5 @@ setup(name="library-boilerplate",
 	description="Test for pip install git+",
 	url="https://github.com/moaible/python-pip-library-boilerplate",
 	packages=['boilerplate'],
-    py_modules=['boilerplate'],
+	py_modules=['boilerplate'],
 	)
