@@ -2,6 +2,5 @@
 #!usr/bin/env python
 #-*- coding: utf-8 -*-
 
-
-def boilerplate():
+def call():
 	return "Hello, world!"
