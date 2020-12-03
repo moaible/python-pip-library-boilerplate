@@ -1,4 +1,7 @@
-from .generator import Generator
+#!usr/bin/env python
+#-*- coding: utf-8 -*-
+
+from boilerplate.generator import Generator
 
 class BuzzGenerator(Generator[int, str]):
 

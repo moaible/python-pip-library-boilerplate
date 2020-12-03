@@ -1,4 +1,4 @@
-from .generator import Generator
+from boilerplate.generator import Generator
 
 class JustGenerator(Generator[int, str]):
 

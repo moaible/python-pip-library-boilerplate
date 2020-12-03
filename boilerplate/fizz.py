@@ -1,4 +1,4 @@
-from .generator import Generator
+from boilerplate.generator import Generator
 
 class FizzGenerator(Generator[int, str]):
 

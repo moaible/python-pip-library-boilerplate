@@ -1,4 +1,4 @@
-from ..generator import Generator
+from boilerplate.generator import Generator
 from typing import TypeVar, Generic, Callable, List
 
 I = TypeVar("I")
